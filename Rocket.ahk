@@ -38,7 +38,7 @@ WinMove A, , %MaxX%, %MaxY%
 ;        Gui, Color, 4F4F4F
 ;    }
 
-; Enable/Disable Rocket 
+; Enable/Disable Rocket using hotkey
 ; Start + .
 LWin & SC034::        
     isRocketEnabled := (isRocketEnabled = 1) ? 0 : 1 
@@ -48,6 +48,22 @@ LWin & SC034::
     else 
         GuiControl, , static1, %disable%
         
+return
+
+; Enable/Disable Rocket by clicking on the gui
+~LButton::
+    MouseGetPos, xpos, ypos, id, control
+
+    if !control
+        return
+
+    isRocketEnabled := (isRocketEnabled = 1) ? 0 : 1 
+
+    if isRocketEnabled = 1
+        GuiControl, , static1, %enable%
+    else 
+        GuiControl, , static1, %disable%    
+
 return
 
 ; Default Start Button behaviour
