@@ -39,7 +39,8 @@ WinMove A, , %MaxX%, %MaxY%
 ;    }
 
 ; Enable/Disable Rocket 
-LCtrl & LWin::        
+; Start + .
+LWin & SC034::        
     isRocketEnabled := (isRocketEnabled = 1) ? 0 : 1 
 
     if isRocketEnabled = 1
