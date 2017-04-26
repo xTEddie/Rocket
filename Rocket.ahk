@@ -24,19 +24,19 @@ MaxY := A_ScreenHeight - Height - 60
 WinMove A, , %MaxX%, %MaxY%
 
 ; Watch cursor position
-SetTimer, WatchCursor, 100
-return
+;SetTimer, WatchCursor, 100
+;return
 
 ; Change color on hover
-WatchCursor:
-    MouseGetPos, xpos, ypos, id, control
-        
-    if (control = Static1) {        
-        Gui, Color, 2B2B2B
-    }
-    else {
-        Gui, Color, 4F4F4F
-    }
+;WatchCursor:
+;    MouseGetPos, xpos, ypos, id, control
+;        
+;    if (control = Static1) {        
+;        Gui, Color, 2B2B2B
+;    }
+;    else {
+;        Gui, Color, 4F4F4F
+;    }
 
 ; Enable/Disable Rocket 
 LCtrl & LWin::        
