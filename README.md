@@ -12,7 +12,7 @@ Custom hotkeys for Windows.
 To enable/disable Rocket
 
 ```
-  Ctrl + .
+  Start + Ctrl
 ```
 
 **View when Rocket is disabled**
