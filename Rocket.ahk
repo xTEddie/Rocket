@@ -52,20 +52,20 @@ LWin & LCtrl::
 return
 
 ; Enable/Disable Rocket by clicking on the gui
-~LButton::
-    MouseGetPos, xpos, ypos, id, control
-
-    if !control
-        return
-
-    isRocketEnabled := (isRocketEnabled = 1) ? 0 : 1 
-
-    if isRocketEnabled = 1
-        GuiControl, , static1, %enable%
-    else 
-        GuiControl, , static1, %disable%    
-
-return
+;~LButton::
+;    MouseGetPos, xpos, ypos, id, control
+;
+;    if !control
+;        return
+;
+;    isRocketEnabled := (isRocketEnabled = 1) ? 0 : 1 
+;
+;    if isRocketEnabled = 1
+;        GuiControl, , static1, %enable%
+;    else 
+;        GuiControl, , static1, %disable%    
+;
+;return
 
 ; Default Start Button behaviour
 LWin::
