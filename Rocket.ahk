@@ -123,3 +123,13 @@ LWin & t::
     Run Commands\LaunchTerminal.ahk
 
 return 
+
+; Launch Network Settings
+; Start-N
+LWin & n::
+    if isRocketEnabled = 0
+        return
+
+    Run Commands\LaunchNetworkSettings.ahk
+
+return 
