@@ -133,3 +133,14 @@ LWin & n::
     Run Commands\LaunchNetworkSettings.ahk
 
 return 
+
+; Launch Mobility Center
+; Start-X
+LWin & x::
+    if isRocketEnabled = 0
+        return
+
+    Run Commands\LaunchMobilityCenter.ahk
+
+return 
+
